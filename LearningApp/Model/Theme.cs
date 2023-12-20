@@ -32,6 +32,11 @@ namespace LearningApp.Model
             }
         }
 
+        public void ChangeThemeName(string newThemeName)
+        {
+            this.ThemeName = newThemeName;
+        }
+
         public int HowManyCards()
         {
             return _cards.Count;
