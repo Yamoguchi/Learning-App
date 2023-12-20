@@ -8,6 +8,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using LearningApp.ViewModel;
 
 namespace LearningApp
 {
@@ -16,9 +17,12 @@ namespace LearningApp
     /// </summary>
     public partial class MainWindow : Window
     {
+        LearmigAppViewModel viewModel;
+
         public MainWindow()
         {
             InitializeComponent();
+            viewModel = new LearmigAppViewModel();
         }
     }
 }
